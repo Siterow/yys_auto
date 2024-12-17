@@ -1,7 +1,6 @@
 import random
 import pyautogui
 from typing import Dict, List
-from get_coord import get_region_coords
 
 
 def click_info(range_dict: Dict[str, List[int]], delay: float = 1.0):
@@ -33,35 +32,32 @@ def perform_boost_actions(range_boost_button: Dict[str, List[int]], boost_option
     click_info(range_boost_button)
 
 
-# 定义点击区域
-ranges = {
-    "menu": get_region_coords(),  # 主页面
-    "start": get_region_coords(),  # 挑战按钮
-    "boost_button": get_region_coords(),  # 加成按钮
-    "boost_100": get_region_coords(),  # 100%加成
-    "boost_50": get_region_coords()  # 50%加成
-}
-
-
 def main():
+    # 定义点击区域
+    ranges = {
+        "group": {"x": [1599, 1628], "y": [735, 767]},  # 组队
+        "start": {"x": [1689, 1760], "y": [764, 802]},  # 挑战按钮
+        "boost_button": {"x": [1176, 1192], "y": [290, 310]},  # 加成按钮
+        "boost_hun": {"x": [1498, 1505], "y": [416, 427]},  # 御魂加成
+    }
     # 先点击一下聚焦到窗口内
     click_info(ranges["menu"])
-    # 开启100%+50%经验加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_100"], ranges["boost_50"]])
+    # 开启御魂加成
+    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
     # 执行主操作
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
         print(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"])
-        pyautogui.sleep(random.randint(13, 15))  # 每轮操作之间暂停 13～15 秒
+        pyautogui.sleep(random.randrange(28, 31))  # 每轮操作之间暂停
         click_info(ranges["menu"])  # 战斗结束后点击界面
-        pyautogui.sleep(random.randint(1, 3))
+        pyautogui.sleep(random.randrange(1, 3))
         click_info(ranges["menu"])  # 再次点击回到主界面
 
     # 关闭加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_100"], ranges["boost_50"]])
+    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
 
 if __name__ == "__main__":
-    circleTime = 1
+    circleTime = 50
     main()
