@@ -34,8 +34,8 @@ def get_region_coords():
         y_range = [min(y_min, y_max), max(y_min, y_max)]
         range_info = {"x": x_range, "y": y_range}
         print(f'区域范围：{range_info}')
-        print(coords)
-        return {"x": x_range, "y": y_range}
+        coords.clear()
+        return range_info
     else:
         print("未正确选定区域")
         return None

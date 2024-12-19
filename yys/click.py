@@ -2,6 +2,14 @@ import random
 import pyautogui
 from typing import Dict, List
 from get_coord import get_region_coords
+import logging
+
+# 配置日志
+logging.basicConfig(
+    level=logging.DEBUG,          # 设置最低日志级别为 DEBUG，记录所有级别的日志
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 设置日志格式
+    datefmt='%Y-%m-%d %H:%M:%S'   # 设置时间格式
+)
 
 
 def click_info(range_dict: Dict[str, List[int]], delay: float = 1.0):
@@ -45,20 +53,23 @@ ranges = {
 
 def main():
     # 先点击一下聚焦到窗口内
+    logging.info("聚焦窗口")
     click_info(ranges["menu"])
     # 开启100%+50%经验加成
+    logging.info("开启100%+50%经验加成")
     perform_boost_actions(ranges["boost_button"], [ranges["boost_100"], ranges["boost_50"]])
 
     # 执行主操作
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
-        print(f"开始第 {i + 1} 次操作")
+        logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"])
-        pyautogui.sleep(random.randint(13, 15))  # 每轮操作之间暂停 13～15 秒
+        pyautogui.sleep(random.randint(1, 2))  # 每轮操作之间暂停 13～15 秒
         click_info(ranges["menu"])  # 战斗结束后点击界面
         pyautogui.sleep(random.randint(1, 3))
         click_info(ranges["menu"])  # 再次点击回到主界面
 
     # 关闭加成
+    logging.info("开始关闭加成")
     perform_boost_actions(ranges["boost_button"], [ranges["boost_100"], ranges["boost_50"]])
 
 
