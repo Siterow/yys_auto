@@ -25,43 +25,21 @@ def click_info(range_dict: Dict[str, List[int]], delay: float = 1.0):
     pyautogui.click(x_coord, y_coord, button='left')
 
 
-def perform_boost_actions(range_boost_button: Dict[str, List[int]], boost_options: List[Dict[str, List[int]]]):
-    """
-    执行开启或关闭加成操作。
-
-    :param range_boost_button: 加成按钮的点击范围
-    :param boost_options: 加成选项的范围列表
-    """
-    # 点击加成按钮
-    click_info(range_boost_button)
-    for option in boost_options:
-        click_info(option, delay=1)  # 每个选项之间延迟 1 秒
-    # 再次点击加成按钮关闭菜单
-    click_info(range_boost_button)
-
-
 def main():
     # 定义点击区域
     ranges = {
         "menu": {'x': [1318, 1619], 'y': [366, 384]},  # 主页面
-        "start": {'x': [1704, 1734], 'y': [731, 763]},  # 挑战按钮
-        "boost_button": {'x': [1265, 1281], 'y': [319, 332]},  # 加成按钮
-        "boost_hun": {'x': [1537, 1544], 'y': [423, 427]}  # 御魂加成
+        "start": {'x': [1720, 1749], 'y': [802, 829]}  # 挑战按钮
     }
     # 先点击一下聚焦到窗口内
     click_info(ranges["menu"])
-    # 开启御魂加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
     # 执行主操作
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
         logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"], delay=1)
-        click_info(ranges["menu"], delay=random.randrange(28, 30))  # 战斗结束后点击界面
+        click_info(ranges["menu"], delay=random.randrange(23, 25))  # 战斗结束后点击界面
         click_info(ranges["menu"], delay=random.randrange(2, 3))  # 再次点击回到主界面
-
-    # 关闭加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
 
 if __name__ == "__main__":
