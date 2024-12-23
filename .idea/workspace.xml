@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 添加日志打印，增加录制功能">
-      <change afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 添加契灵探查">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/hun11_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/hun11_one.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.qiling">
+  <component name="RunManager" selected="Python.recording_click">
     <configuration name="click" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -151,7 +149,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="replaying_click" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="recording_click" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,7 +162,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/replaying_click.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/recording_click.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.recording_click" />
         <item itemvalue="Python.qiling" />
         <item itemvalue="Python.get_coord" />
         <item itemvalue="Python.hun11_one" />
         <item itemvalue="Python.click" />
-        <item itemvalue="Python.replaying_click" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734590727050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#fix 添加契灵探查">
+      <option name="closed" value="true" />
+      <created>1734879389108</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734879389108</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +259,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix click中每次开始前选取坐标范围" />
     <MESSAGE value="#fix 添加日志打印，增加录制功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix 添加日志打印，增加录制功能" />
+    <MESSAGE value="#fix 添加契灵探查" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix 添加契灵探查" />
   </component>
 </project>

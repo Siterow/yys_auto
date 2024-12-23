@@ -5,21 +5,35 @@ import json
 # 存储点击记录的列表
 clicks = []
 
-# 记录开始时间
-start_time = time.time()
+# 初始化上一次点击时间
+last_click_time = None
 
 
 def on_click(x, y, button, pressed):
+    global last_click_time
+
     if pressed:
-        # 计算当前时间与开始时间的间隔
-        elapsed_time = time.time() - start_time
+        # 获取当前时间
+        current_time = time.time()
+
+        # 计算时间间隔
+        if last_click_time is None:
+            elapsed_time = 0  # 第一次点击时间间隔为 0
+        else:
+            elapsed_time = current_time - last_click_time
+
+        # 更新上一次点击时间
+        last_click_time = current_time
+
         # 存储点击位置(x, y)和时间间隔
+        x_coord = int(x)
+        y_coord = int(y)
         clicks.append({
-            'x': x,
-            'y': y,
-            'time': elapsed_time
+            'x_coord': x_coord,
+            'y_coord': y_coord,
+            'time_interval': elapsed_time
         })
-        print(f"Clicked at ({x}, {y}), Time: {elapsed_time:.2f} seconds")
+        print(f"Clicked at ({x_coord}, {y_coord}), Time since last click: {elapsed_time:.2f} seconds")
 
 
 def on_move(x, y):
@@ -40,5 +54,5 @@ except KeyboardInterrupt:
     print("\nRecording stopped by user.")
     # 将点击记录保存为JSON文件
     with open('mouse_clicks.json', 'w') as f:
-        json.dump(clicks, f)
+        json.dump(clicks, f, indent=4)
     print(f"Recording finished. {len(clicks)} clicks recorded.")
