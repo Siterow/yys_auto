@@ -38,10 +38,12 @@ def main():
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
         logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"], delay=1)
-        click_info(ranges["menu"], delay=random.randrange(23, 25))  # 战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(2, 3))  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 契灵战斗结束后点击界面
+        click_info(ranges["menu"], delay=random.randrange(13, 15))  # 活动战斗结束后点击界面
+        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
 
 
 if __name__ == "__main__":
-    circleTime = 54
+    circleTime = 90
     main()

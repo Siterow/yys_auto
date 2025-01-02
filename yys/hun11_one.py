@@ -43,27 +43,29 @@ def perform_boost_actions(range_boost_button: Dict[str, List[int]], boost_option
 def main():
     # 定义点击区域
     ranges = {
-        "menu": {'x': [1318, 1619], 'y': [366, 384]},  # 主页面
-        "start": {'x': [1704, 1734], 'y': [731, 763]},  # 挑战按钮
-        "boost_button": {'x': [1265, 1281], 'y': [319, 332]},  # 加成按钮
-        "boost_hun": {'x': [1537, 1544], 'y': [423, 427]}  # 御魂加成
+        "menu": {'x': [1301, 1674], 'y': [359, 395]},  # 主页面
+        "start": {'x': [1717, 1747], 'y': [734, 760]},  # 挑战按钮
+        "boost_button": {'x': [1292, 1293], 'y': [320, 326]},  # 加成按钮
+        "boost_hun": {'x': [1551, 1556], 'y': [418, 423]}  # 御魂加成
     }
     # 先点击一下聚焦到窗口内
     click_info(ranges["menu"])
     # 开启御魂加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
+    # perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
     # 执行主操作
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
         logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"], delay=1)
-        click_info(ranges["menu"], delay=random.randrange(28, 30))  # 战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(2, 3))  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=random.randrange(21, 23))  # 战斗结束后点击界面
+        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
 
     # 关闭加成
     perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
 
 if __name__ == "__main__":
-    circleTime = 54
+    circleTime = 300
     main()
