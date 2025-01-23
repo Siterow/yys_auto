@@ -1,0 +1,62 @@
+[
+    {
+        "x_coord": 1267,
+        "y_coord": 227,
+        "time_interval": 0
+    },
+    {
+        "x_coord": 1282,
+        "y_coord": 223,
+        "time_interval": 1.0478849411010742
+    },
+    {
+        "x_coord": 1550,
+        "y_coord": 324,
+        "time_interval": 1.273226022720337
+    },
+    {
+        "x_coord": 1552,
+        "y_coord": 327,
+        "time_interval": 2.1500563621520996
+    },
+    {
+        "x_coord": 1667,
+        "y_coord": 421,
+        "time_interval": 0.7689087390899658
+    },
+    {
+        "x_coord": 1739,
+        "y_coord": 655,
+        "time_interval": 1.4314610958099365
+    },
+    {
+        "x_coord": 1723,
+        "y_coord": 665,
+        "time_interval": 4.056416988372803
+    },
+    {
+        "x_coord": 1624,
+        "y_coord": 666,
+        "time_interval": 20.643651962280273
+    },
+    {
+        "x_coord": 1624,
+        "y_coord": 666,
+        "time_interval": 0.41585612297058105
+    },
+    {
+        "x_coord": 1624,
+        "y_coord": 666,
+        "time_interval": 1.3243896961212158
+    },
+    {
+        "x_coord": 1624,
+        "y_coord": 666,
+        "time_interval": 1.5879631042480469
+    },
+    {
+        "x_coord": 665,
+        "y_coord": 111,
+        "time_interval": 4.439378023147583
+    }
+]
