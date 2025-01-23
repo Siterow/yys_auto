@@ -29,19 +29,21 @@ def main():
     # 定义点击区域
     ranges = {
         "menu": {'x': [1318, 1619], 'y': [366, 384]},  # 主页面
-        "start": {'x': [1720, 1749], 'y': [802, 829]}  # 挑战按钮
+        "start": {'x': [1710, 1737], 'y': [730, 761]}  # 挑战按钮
     }
     # 先点击一下聚焦到窗口内
     click_info(ranges["menu"])
 
     # 执行主操作
     for i in range(circleTime):  # 修改循环次数可控制操作重复次数
-        logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"], delay=1)
-        # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 契灵战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(13, 15))  # 活动战斗结束后点击界面
+        logging.info(f"开始第 {i + 1} 次操作")
+        click_info(ranges["menu"], delay=random.randrange(14, 16))  # 活动战斗结束后点击界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
         click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
 
 
 if __name__ == "__main__":
