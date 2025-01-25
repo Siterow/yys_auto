@@ -58,19 +58,20 @@ def main():
         click_info(ranges["start"], delay=1)
         logging.info(f"开始第 {i + 1} 次操作")
         # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 魂土战斗结束后点击界面
-        # click_info(ranges["menu"], delay=random.randrange(19, 21))  # 魂十战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(48, 49))  # 魂王战斗结束后点击界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=0.8)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=random.randrange(16, 18))  # 魂十战斗结束后点击界面
+        # click_info(ranges["menu"], delay=random.randrange(48, 49))  # 魂王战斗结束后点击界面
+        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=3)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
+
+        # click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
         # click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
 
     # 关闭加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
+    # perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
 
 
 if __name__ == "__main__":
-    circleTime = 400
+    circleTime = 293
     main()

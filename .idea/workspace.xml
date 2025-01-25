@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 御灵">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/hun11_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/hun11_one.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.qiling">
+  <component name="RunManager" selected="Python.hun11_one">
     <configuration name="connect_mysql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -177,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.qiling" />
         <item itemvalue="Python.hun11_one" />
+        <item itemvalue="Python.qiling" />
         <item itemvalue="Python.yuling" />
         <item itemvalue="Python.get_coord" />
         <item itemvalue="Python.connect_mysql" />
@@ -257,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737604096701</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="#fix 御灵">
+      <option name="closed" value="true" />
+      <created>1737608755471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737608755471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

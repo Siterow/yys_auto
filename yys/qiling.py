@@ -40,9 +40,9 @@ def main():
         click_info(ranges["start"], delay=1)
         # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 契灵战斗结束后点击界面
         click_info(ranges["menu"], delay=random.randrange(20, 22))  # 活动战斗结束后点击界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=3)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
         click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
 
 
