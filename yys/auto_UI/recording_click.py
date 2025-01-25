@@ -53,6 +53,6 @@ try:
 except KeyboardInterrupt:
     print("\nRecording stopped by user.")
     # 将点击记录保存为JSON文件
-    with open('mouse_clicks.json', 'w') as f:
+    with open('../mouse_clicks.json', 'w') as f:
         json.dump(clicks, f, indent=4)
     print(f"Recording finished. {len(clicks)} clicks recorded.")

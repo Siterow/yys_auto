@@ -3,7 +3,7 @@ import time
 import json
 
 # 读取点击记录
-with open('mouse_clicks.json', 'r') as f:
+with open('../mouse_clicks.json', 'r') as f:
     clicks = json.load(f)
 
 # 创建一个鼠标控制器对象
