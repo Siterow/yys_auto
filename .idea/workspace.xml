@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 御灵">
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 优化目录结构s，将基础函数放到同个文件">
+      <change afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/hun11_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/hun11_one.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +48,24 @@
     "Python.get_coord.executor": "Run",
     "Python.hun11.executor": "Run",
     "Python.hun11_one.executor": "Run",
+    "Python.huodong.executor": "Run",
+    "Python.lick.executor": "Run",
     "Python.qiling.executor": "Run",
     "Python.recording_click.executor": "Run",
     "Python.replaying_click.executor": "Run",
+    "Python.scratch_1.executor": "Run",
+    "Python.yuhun.executor": "Run",
     "Python.yuling.executor": "Run",
+    "Python.zhishu.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/shutianyu/PycharmProjects/yys_auto/yys"
+    "last_opened_file_path": "/Users/shutianyu/PycharmProjects/yys_auto/yys",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,32 +73,11 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/yys/auto_UI" />
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.hun11_one">
-    <configuration name="connect_mysql" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="yys_auto" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/connect_mysql.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.huodong">
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -110,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hun11_one" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="huodong" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +113,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/hun11_one.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/huodong.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -132,7 +122,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="qiling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/qiling.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/lick.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="yuling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yuhun" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,7 +157,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/yuling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/yuhun.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zhishu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yys_auto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/zhishu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hun11_one" />
-        <item itemvalue="Python.qiling" />
-        <item itemvalue="Python.yuling" />
+        <item itemvalue="Python.huodong" />
+        <item itemvalue="Python.lick" />
+        <item itemvalue="Python.yuhun" />
         <item itemvalue="Python.get_coord" />
-        <item itemvalue="Python.connect_mysql" />
+        <item itemvalue="Python.zhishu" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +278,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737608755471</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#fix 微调">
+      <option name="closed" value="true" />
+      <created>1737774315700</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737774315700</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#fix 优化目录结构，将基础函数放到同个文件">
+      <option name="closed" value="true" />
+      <created>1737775046807</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737775046807</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +328,8 @@
     <MESSAGE value="#fix recording_click修改，时间间隔改成两次点击之间，而不是与开始时间的间隔" />
     <MESSAGE value="#fix 夏目活动" />
     <MESSAGE value="#fix 御灵" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix 御灵" />
+    <MESSAGE value="#fix 微调" />
+    <MESSAGE value="#fix 优化目录结构，将基础函数放到同个文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix 优化目录结构，将基础函数放到同个文件" />
   </component>
 </project>
