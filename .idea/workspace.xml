@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 优化目录结构s，将基础函数放到同个文件">
-      <change afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 超鬼王门票副本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
     </list>
@@ -40,34 +39,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LS_factoryCode.executor": "Run",
-    "Python.click.executor": "Run",
-    "Python.connect_mysql.executor": "Run",
-    "Python.get_coord.executor": "Run",
-    "Python.hun11.executor": "Run",
-    "Python.hun11_one.executor": "Run",
-    "Python.huodong.executor": "Run",
-    "Python.lick.executor": "Run",
-    "Python.qiling.executor": "Run",
-    "Python.recording_click.executor": "Run",
-    "Python.replaying_click.executor": "Run",
-    "Python.scratch_1.executor": "Run",
-    "Python.yuhun.executor": "Run",
-    "Python.yuling.executor": "Run",
-    "Python.zhishu.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/shutianyu/PycharmProjects/yys_auto/yys",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LS_factoryCode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.click.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connect_mysql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_coord.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hun11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hun11_one.executor&quot;: &quot;Run&quot;,
+    &quot;Python.huodong.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lick.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qiling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.recording_click.executor&quot;: &quot;Run&quot;,
+    &quot;Python.replaying_click.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yuhun.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yuling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.zhishu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shutianyu/PycharmProjects/yys_auto/yys&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/yys" />
@@ -77,7 +76,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.huodong">
+  <component name="RunManager" selected="Python.yuhun">
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -190,9 +189,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.huodong" />
-        <item itemvalue="Python.lick" />
         <item itemvalue="Python.yuhun" />
+        <item itemvalue="Python.lick" />
+        <item itemvalue="Python.huodong" />
         <item itemvalue="Python.get_coord" />
         <item itemvalue="Python.zhishu" />
       </list>
@@ -294,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737775046807</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="#fix 超鬼王门票副本">
+      <option name="closed" value="true" />
+      <created>1741225624333</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741225624333</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,6 +337,7 @@
     <MESSAGE value="#fix 御灵" />
     <MESSAGE value="#fix 微调" />
     <MESSAGE value="#fix 优化目录结构，将基础函数放到同个文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix 优化目录结构，将基础函数放到同个文件" />
+    <MESSAGE value="#fix 超鬼王门票副本" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix 超鬼王门票副本" />
   </component>
 </project>

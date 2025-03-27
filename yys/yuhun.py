@@ -28,10 +28,12 @@ def main():
         click_info(ranges["start"], delay=1)
         logging.info(f"开始第 {i + 1} 次操作")
         # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 魂土战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(16, 18))  # 魂十战斗结束后点击界面
-        # click_info(ranges["menu"], delay=random.randrange(48, 49))  # 魂王战斗结束后点击界面
-        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=3)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=random.randrange(16, 18))  # 魂十战斗结束后点击界面
+        click_info(ranges["menu"], delay=random.randrange(35, 36))  # 魂王战斗结束后点击界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
         click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
         click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
 
@@ -44,5 +46,5 @@ def main():
 
 
 if __name__ == "__main__":
-    circleTime = 500
+    circleTime = 100
     main()
