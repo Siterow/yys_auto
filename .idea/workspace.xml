@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 超鬼王门票副本">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/huodong.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/yuling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -76,7 +79,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.yuhun">
+  <component name="RunManager" selected="Python.huodong">
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -165,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zhishu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="yuling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,11 +177,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/zhishu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/yuling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,18 +192,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.huodong" />
+        <item itemvalue="Python.yuling" />
+        <item itemvalue="Python.get_coord" />
         <item itemvalue="Python.yuhun" />
         <item itemvalue="Python.lick" />
-        <item itemvalue="Python.huodong" />
-        <item itemvalue="Python.get_coord" />
-        <item itemvalue="Python.zhishu" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-c69650fc56ca-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15619.17" />
       </set>
     </attachedChunks>
   </component>
