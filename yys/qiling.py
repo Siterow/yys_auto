@@ -1,34 +1,27 @@
-import logging
 import random
-from click_def import click_info
-
-# 配置日志
-logging.basicConfig(
-    level=logging.DEBUG,  # 设置最低日志级别为 DEBUG，记录所有级别的日志
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 设置日志格式
-    datefmt='%Y-%m-%d %H:%M:%S'  # 设置时间格式
-)
+from click_def import run_auto_battle, setup_logging
 
 
 def main():
+    setup_logging()
     # 定义点击区域
     ranges = {
         "menu": {'x': [1202, 1476], 'y': [260, 289]},  # 主页面
         "start": {'x': [1677, 1736], 'y': [890, 948]}  # 挑战按钮
     }
-    # 先点击一下聚焦到窗口内
-    click_info(ranges["menu"])
-
-    # 执行主操作
-    for i in range(circleTime):  # 修改循环次数可控制操作重复次数
-        logging.info(f"开始第 {i + 1} 次操作")
-        click_info(ranges["start"], delay=1)
+    # 契灵/活动：战斗结束后等待时间
+    def get_battle_end_delay() -> float:
         # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 契灵战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(8, 10))  # 活动战斗结束后点击界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        # click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
+        return random.randrange(8, 10)  # 活动战斗结束后点击界面
+
+    extra_menu_click_delays = [1, 1, 1]
+
+    run_auto_battle(
+        circle_time=circleTime,
+        ranges=ranges,
+        get_battle_end_delay=get_battle_end_delay,
+        extra_menu_click_delays=extra_menu_click_delays,
+    )
 
 
 if __name__ == "__main__":
