@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 超鬼王门票副本">
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix xueyuqian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/huodong.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/yuling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/shutianyu/PycharmProjects/yys_auto/yys&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
@@ -79,7 +79,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.huodong">
+  <component name="RunManager" selected="Python.yuling">
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -124,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="qiling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +133,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/lick.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/qiling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.huodong" />
         <item itemvalue="Python.yuling" />
+        <item itemvalue="Python.qiling" />
         <item itemvalue="Python.get_coord" />
+        <item itemvalue="Python.huodong" />
         <item itemvalue="Python.yuhun" />
-        <item itemvalue="Python.lick" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741225624333</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#fix xueyuqian">
+      <option name="closed" value="true" />
+      <created>1757577414043</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1757577414043</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,6 +349,7 @@
     <MESSAGE value="#fix 微调" />
     <MESSAGE value="#fix 优化目录结构，将基础函数放到同个文件" />
     <MESSAGE value="#fix 超鬼王门票副本" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix 超鬼王门票副本" />
+    <MESSAGE value="#fix xueyuqian" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix xueyuqian" />
   </component>
 </project>

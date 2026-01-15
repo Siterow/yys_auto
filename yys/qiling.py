@@ -13,8 +13,8 @@ logging.basicConfig(
 def main():
     # 定义点击区域
     ranges = {
-        "menu": {'x': [1318, 1619], 'y': [366, 384]},  # 主页面
-        "start": {'x': [1720, 1749], 'y': [802, 829]}  # 挑战按钮
+        "menu": {'x': [1202, 1476], 'y': [260, 289]},  # 主页面
+        "start": {'x': [1677, 1736], 'y': [890, 948]}  # 挑战按钮
     }
     # 先点击一下聚焦到窗口内
     click_info(ranges["menu"])
@@ -24,13 +24,13 @@ def main():
         logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["start"], delay=1)
         # click_info(ranges["menu"], delay=random.randrange(23, 25))  # 契灵战斗结束后点击界面
-        click_info(ranges["menu"], delay=random.randrange(20, 22))  # 活动战斗结束后点击界面
-        click_info(ranges["menu"], delay=3)  # 再次点击回到主界面
-        # click_info(ranges["menu"], delay=2)  # 再次点击回到主界面
-        # click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=random.randrange(8, 10))  # 活动战斗结束后点击界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        click_info(ranges["menu"], delay=1)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
 
 
 if __name__ == "__main__":
-    circleTime = 200
+    circleTime = 100
     main()

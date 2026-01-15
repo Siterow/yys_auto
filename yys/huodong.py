@@ -1,6 +1,6 @@
 import logging
 import random
-from click_def import click_info, perform_boost_actions
+from click_def import click_info
 
 # 配置日志
 logging.basicConfig(
@@ -24,10 +24,11 @@ def main():
         click_info(ranges["start"], delay=1)
         logging.info(f"开始第 {i + 1} 次操作")
         click_info(ranges["menu"], delay=random.randrange(10, 12))  # 魂土战斗结束后点击界面
-        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
-        click_info(ranges["menu"], delay=0.5)  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=random.randrange(25, 27))  # 魂土战斗结束后点击界面
+        # click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
+        # click_info(ranges["menu"], delay=random.randrange(1, 2))  # 再次点击回到主界面
 
 
 if __name__ == "__main__":
-    circleTime = 993
+    circleTime = 900
     main()
