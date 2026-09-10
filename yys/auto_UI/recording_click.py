@@ -1,58 +1,64 @@
-from pynput.mouse import Listener
-import time
+"""录制鼠标左键点击序列。
+
+用法（在项目根目录执行）：
+    python -m yys.auto_UI.recording_click
+
+左键点击会被记录；按 Esc 或 Ctrl+C 结束录制。
+结果保存为 yys/mouse_clicks.json，格式为
+[{"x": .., "y": .., "t": 距第一次点击的秒数}, ...]
+"""
+
+from __future__ import annotations
+
 import json
+import threading
+import time
+from pathlib import Path
 
-# 存储点击记录的列表
-clicks = []
+from pynput import keyboard, mouse
 
-# 初始化上一次点击时间
-last_click_time = None
-
-
-def on_click(x, y, button, pressed):
-    global last_click_time
-
-    if pressed:
-        # 获取当前时间
-        current_time = time.time()
-
-        # 计算时间间隔
-        if last_click_time is None:
-            elapsed_time = 0  # 第一次点击时间间隔为 0
-        else:
-            elapsed_time = current_time - last_click_time
-
-        # 更新上一次点击时间
-        last_click_time = current_time
-
-        # 存储点击位置(x, y)和时间间隔
-        x_coord = int(x)
-        y_coord = int(y)
-        clicks.append({
-            'x_coord': x_coord,
-            'y_coord': y_coord,
-            'time_interval': elapsed_time
-        })
-        print(f"Clicked at ({x_coord}, {y_coord}), Time since last click: {elapsed_time:.2f} seconds")
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "mouse_clicks.json"
 
 
-def on_move(x, y):
-    pass  # 这里只是为了响应鼠标移动事件
+def main() -> None:
+    events: list[dict[str, float | int]] = []
+    first_ts: float | None = None
+    prev_ts: float | None = None
+    stop_requested = threading.Event()
+
+    def on_click(x: int, y: int, button: mouse.Button, pressed: bool) -> None:
+        nonlocal first_ts, prev_ts
+        if not pressed or button != mouse.Button.left:
+            return
+        ts = time.monotonic()
+        if first_ts is None:
+            first_ts = ts
+        interval = 0.0 if prev_ts is None else ts - prev_ts
+        prev_ts = ts
+        events.append({"x": int(x), "y": int(y), "t": round(ts - first_ts, 3)})
+        print(f"记录 ({int(x)}, {int(y)})，距上次 {interval:.2f}s，共 {len(events)} 次")
+
+    def on_press(key: keyboard.Key) -> bool:
+        if key == keyboard.Key.esc:
+            stop_requested.set()
+            return False  # 停止键盘监听
+        return True
+
+    print("开始录制：左键记录点击，按 Esc 或 Ctrl+C 结束...")
+    try:
+        with mouse.Listener(on_click=on_click) as mouse_listener, keyboard.Listener(
+            on_press=on_press
+        ) as keyboard_listener:
+            while mouse_listener.running and not stop_requested.is_set():
+                time.sleep(0.05)
+            keyboard_listener.stop()
+    except KeyboardInterrupt:
+        print("Ctrl+C，结束录制。")
+
+    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
+        json.dump(events, f, ensure_ascii=False, indent=4)
+    print(f"录制完成，共 {len(events)} 次点击，已保存到 {OUTPUT_FILE}")
 
 
-def on_scroll(x, y, dx, dy):
-    pass  # 这里只是为了响应滚轮事件
-
-
-try:
-    # 启动监听器
-    with Listener(on_click=on_click, on_move=on_move, on_scroll=on_scroll) as listener:
-        print("Recording mouse clicks... Press Ctrl+C to stop.")
-        listener.join()
-
-except KeyboardInterrupt:
-    print("\nRecording stopped by user.")
-    # 将点击记录保存为JSON文件
-    with open('../mouse_clicks.json', 'w') as f:
-        json.dump(clicks, f, indent=4)
-    print(f"Recording finished. {len(clicks)} clicks recorded.")
+if __name__ == "__main__":
+    main()

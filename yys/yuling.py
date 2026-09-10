@@ -1,28 +1,24 @@
-import random
-from click_def import run_auto_battle, setup_logging
+"""御灵自动刷本入口。
+
+直接运行本文件，等价于：
+    python -m yys.farm yuling
+"""
+
+from pathlib import Path
+import sys
+
+if __package__ in (None, ""):
+    # 兼容“在 yys 目录下 python yuling.py”和“在项目根目录 python yys/yuling.py”
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from yys.click_def import setup_logging
+from yys.farm import run_mode
 
 
-def main():
+def main() -> None:
     setup_logging()
-    # 定义点击区域
-    ranges = {
-        "menu": {'x': [949, 1325], 'y': [276, 344]},  # 主页面
-        "start": {'x': [1627, 1676], 'y': [860, 898]}  # 挑战按钮
-    }
-    # 御灵战斗结束后等待时间
-    def get_battle_end_delay() -> float:
-        return random.randrange(12, 13)
-
-    extra_menu_click_delays = [1, 1, 1, 1]
-
-    run_auto_battle(
-        circle_time=circleTime,
-        ranges=ranges,
-        get_battle_end_delay=get_battle_end_delay,
-        extra_menu_click_delays=extra_menu_click_delays,
-    )
+    run_mode("yuling")
 
 
 if __name__ == "__main__":
-    circleTime = 500
     main()

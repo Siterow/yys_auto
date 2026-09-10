@@ -1,38 +1,30 @@
-import random
-from click_def import perform_boost_actions, run_auto_battle, setup_logging
+"""御魂（魂土）自动刷本入口。
+
+直接运行本文件，等价于：
+    python -m yys.farm yuhun
+
+加成默认与当前 yuhun.py 行为一致：刷完后再点一次（收尾关闭）。
+开始前也想自动开一次（加成当前为关）时：
+    python -m yys.farm yuhun --boost
+完全不碰加成按钮时：
+    python -m yys.farm yuhun --no-boost
+"""
+
+from pathlib import Path
+import sys
+
+if __package__ in (None, ""):
+    # 兼容“在 yys 目录下 python yuhun.py”和“在项目根目录 python yys/yuhun.py”
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from yys.click_def import setup_logging
+from yys.farm import run_mode
 
 
-def main():
+def main() -> None:
     setup_logging()
-    # 定义点击区域
-    ranges = {
-        "menu": {'x': [1301, 1674], 'y': [359, 395]},  # 主页面
-        "start": {'x': [1717, 1747], 'y': [734, 760]},  # 挑战按钮
-        "boost_button": {'x': [1292, 1293], 'y': [320, 326]},  # 加成按钮
-        "boost_hun": {'x': [1551, 1556], 'y': [418, 423]}  # 御魂加成
-    }
-
-    # 开启御魂加成（如不需要可注释掉）
-    # perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
-
-    def get_battle_end_delay() -> float:
-        # 默认是魂土战斗结束后的等待时间
-        return random.randrange(20, 22)
-
-    extra_menu_click_delays = [1, 1, 1, 1, 0.5, 0.5]
-
-    # 执行主操作
-    run_auto_battle(
-        circle_time=circleTime,
-        ranges=ranges,
-        get_battle_end_delay=get_battle_end_delay,
-        extra_menu_click_delays=extra_menu_click_delays,
-    )
-
-    # 关闭加成
-    perform_boost_actions(ranges["boost_button"], [ranges["boost_hun"]])
+    run_mode("yuhun")
 
 
 if __name__ == "__main__":
-    circleTime = 600
     main()

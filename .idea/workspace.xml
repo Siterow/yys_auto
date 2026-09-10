@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix xueyuqian">
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix ai给我优化了一下">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/click_def.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/click_def.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/get_coord.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/get_coord.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/huodong.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/yuling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +86,7 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.yuling">
+  <component name="RunManager" selected="Python.huodong">
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -192,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.huodong" />
+        <item itemvalue="Python.get_coord" />
+        <item itemvalue="Python.yuhun" />
         <item itemvalue="Python.yuling" />
         <item itemvalue="Python.qiling" />
-        <item itemvalue="Python.get_coord" />
-        <item itemvalue="Python.huodong" />
-        <item itemvalue="Python.yuhun" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +319,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757577414043</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="#fix 变更前提交">
+      <option name="closed" value="true" />
+      <created>1768467275640</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1768467275640</updated>
+    </task>
+    <task id="LOCAL-00014" summary="#fix ai给我优化了一下">
+      <option name="closed" value="true" />
+      <created>1768467594305</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1768467594305</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,6 +373,8 @@
     <MESSAGE value="#fix 优化目录结构，将基础函数放到同个文件" />
     <MESSAGE value="#fix 超鬼王门票副本" />
     <MESSAGE value="#fix xueyuqian" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix xueyuqian" />
+    <MESSAGE value="#fix 变更前提交" />
+    <MESSAGE value="#fix ai给我优化了一下" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix ai给我优化了一下" />
   </component>
 </project>
