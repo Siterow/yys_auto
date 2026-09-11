@@ -17,7 +17,10 @@ python3 -m venv .venv
 统一入口：
 
 ```bash
-# 在项目根目录
+# 方式一：直接运行，模式由 farm.py 顶部的 DEFAULT_MODE 决定
+.venv/bin/python yys/farm.py
+
+# 方式二：命令行指定模式
 .venv/bin/python -m yys.farm yuling
 .venv/bin/python -m yys.farm qiling
 .venv/bin/python -m yys.farm yuhun
@@ -31,10 +34,11 @@ python3 -m venv .venv
 .venv/bin/python -m yys.farm yuhun --boost                 # 开始前也先开一次加成（加成处于关闭状态时用）
 ```
 
-御魂模式默认与 `yuhun.py` 现状一致：刷完后再点一次加成（用于收尾关闭）。
+御魂模式的加成默认行为：刷完后再点一次加成（用于收尾关闭）。
 `--boost` 会额外在开始前开一次，`--no-boost` 则完全不碰加成按钮。
 
-也可以照旧直接运行 `yys/yuling.py` 等文件，行为与不带参数的模式入口等价。
+直接运行 `yys/farm.py`（模式由文件顶部的 DEFAULT_MODE 决定），或者用命令行参数指定模式。
+前面的 yuling.py / qiling.py / yuhun.py / huodong.py 已经删除，逻辑只在 farm.py + modes.py 里。
 
 ## 坐标配置
 

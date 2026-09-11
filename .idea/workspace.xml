@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 优化">
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 优化，去除无用的代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/auto_UI/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/click_def.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/click_def.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/farm.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/farm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/huodong.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/image_locator.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yys/modes.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/modes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/mouse_clicks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/yuling.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,34 +49,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.LS_factoryCode.executor&quot;: &quot;Run&quot;,
-    &quot;Python.click.executor&quot;: &quot;Run&quot;,
-    &quot;Python.connect_mysql.executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_coord.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hun11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hun11_one.executor&quot;: &quot;Run&quot;,
-    &quot;Python.huodong.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lick.executor&quot;: &quot;Run&quot;,
-    &quot;Python.qiling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.recording_click.executor&quot;: &quot;Run&quot;,
-    &quot;Python.replaying_click.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.yuhun.executor&quot;: &quot;Run&quot;,
-    &quot;Python.yuling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zhishu.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/shutianyu/PycharmProjects/yys_auto/yys&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.LS_factoryCode.executor": "Run",
+    "Python.click.executor": "Run",
+    "Python.connect_mysql.executor": "Run",
+    "Python.farm.executor": "Run",
+    "Python.get_coord.executor": "Run",
+    "Python.hun11.executor": "Run",
+    "Python.hun11_one.executor": "Run",
+    "Python.huodong.executor": "Run",
+    "Python.lick.executor": "Run",
+    "Python.qiling.executor": "Run",
+    "Python.recording_click.executor": "Run",
+    "Python.replaying_click.executor": "Run",
+    "Python.scratch_1.executor": "Run",
+    "Python.yuhun.executor": "Run",
+    "Python.yuling.executor": "Run",
+    "Python.zhishu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/shutianyu/PycharmProjects/yys_auto/yys",
+    "settings.editor.selected.configurable": "vcs.Git"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
-      &quot;Python&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
+      "Python"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/yys" />
@@ -82,7 +87,29 @@
       <recent name="$PROJECT_DIR$/yys" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.huodong">
+  <component name="RunManager" selected="Python.farm">
+    <configuration name="farm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="yys_auto" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/farm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="get_coord" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="yys_auto" />
       <option name="ENV_FILES" value="" />
@@ -119,28 +146,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/huodong.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="qiling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="yys_auto" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/yys" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yys/qiling.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.farm" />
         <item itemvalue="Python.huodong" />
         <item itemvalue="Python.get_coord" />
         <item itemvalue="Python.yuhun" />
         <item itemvalue="Python.yuling" />
-        <item itemvalue="Python.qiling" />
       </list>
     </recent_temporary>
   </component>
@@ -347,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789058476092</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="#fix 优化，去除无用的代码">
+      <option name="closed" value="true" />
+      <created>1789088941402</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1789088941402</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,6 +401,7 @@
     <MESSAGE value="#fix 变更前提交" />
     <MESSAGE value="#fix ai给我优化了一下" />
     <MESSAGE value="#fix 优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix 优化" />
+    <MESSAGE value="#fix 优化，去除无用的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix 优化，去除无用的代码" />
   </component>
 </project>

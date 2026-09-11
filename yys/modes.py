@@ -37,7 +37,7 @@ MODES: dict[str, BattleMode] = {
         extra_menu_click_delays=(1.0, 1.0, 1.0, 0.5, 0.5),
         boost_button=Region(874, 158, 903, 197),
         boost_options=(Region(1262, 361, 1356, 376),),
-        # 与 yuhun.py 现状一致：只在刷完后点一次加成（开始前不自动开）。
+        # 默认只在刷完后点一次加成（开始前不自动开）。
         # 需要“开始前也开一次”时用 python -m yys.farm yuhun --boost。
         boost_after_run=True,
         default_circle_time=200,
@@ -49,6 +49,6 @@ MODES: dict[str, BattleMode] = {
         start=Region(1660, 903, 1708, 953),
         end_delay_range=(4, 6),
         extra_menu_click_delays=(1.0, 1.0),
-        default_circle_time=800,
+        default_circle_time=1,
     ),
 }

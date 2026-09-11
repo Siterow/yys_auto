@@ -60,7 +60,7 @@ class BattleMode:
     name: str
     display_name: str
     menu: Region  # 战斗结算后点这里回到主界面
-    start: Region  # 挑战按钮
+    start: Region  # 挑战/开始按钮
     end_delay_range: tuple[int, int]  # 战斗结束后的等待秒数范围，随机取整数
     extra_menu_click_delays: tuple[float, ...] = ()
     boost_button: Optional[Region] = None
