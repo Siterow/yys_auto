@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix ai给我优化了一下">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="43761eb7-bc64-416a-a027-8faa01950923" name="更改" comment="#fix 优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/click_def.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/click_def.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/get_coord.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/get_coord.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/huodong.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/huodong.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/qiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/qiling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/yuhun.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuhun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yys/yuling.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/yuling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/auto_UI/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/auto_UI/recording_click.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/auto_UI/replaying_click.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/modes.py" beforeDir="false" afterPath="$PROJECT_DIR$/yys/modes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yys/mouse_clicks.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +331,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768467594305</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="#fix ai给我优化了一下">
+      <option name="closed" value="true" />
+      <created>1789058403283</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1789058403284</updated>
+    </task>
+    <task id="LOCAL-00016" summary="#fix 优化">
+      <option name="closed" value="true" />
+      <created>1789058476092</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1789058476092</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,6 +387,7 @@
     <MESSAGE value="#fix xueyuqian" />
     <MESSAGE value="#fix 变更前提交" />
     <MESSAGE value="#fix ai给我优化了一下" />
-    <option name="LAST_COMMIT_MESSAGE" value="#fix ai给我优化了一下" />
+    <MESSAGE value="#fix 优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="#fix 优化" />
   </component>
 </project>

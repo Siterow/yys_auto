@@ -1,5 +1,4 @@
 # yys_auto
-# yys_auto
 
 基于屏幕坐标的鼠标自动化脚本（Mac / 阴阳师）。
 
@@ -11,7 +10,7 @@ python3 -m venv .venv
 ```
 
 首次运行前，请在 macOS「系统设置 → 隐私与安全性 → 辅助功能」中，
-允许运行脚本的终端或 IDE 控制鼠标；录制/回放还需要允许“输入监控”。
+允许运行脚本的终端或 IDE 控制鼠标；用 get_coord.py 采点时按 Esc 取消，还需要“输入监控”权限。
 
 ## 自动刷本
 
@@ -49,22 +48,7 @@ python3 -m venv .venv
 `Region(...)` 配置。`--mode` 会自动列出该模式需要的全部区域；也可以手动
 指定区域名，如 `python -m yys.get_coord menu start`。
 
-## 录制 / 回放
-
-```bash
-# 录制：左键记录，Esc 或 Ctrl+C 结束
-.venv/bin/python -m yys.auto_UI.recording_click
-
-# 回放：3 秒后开始，可指定次数、倍速和坐标抖动
-.venv/bin/python -m yys.auto_UI.replaying_click
-.venv/bin/python -m yys.auto_UI.replaying_click --repeat 10 --scale 1.2
-```
-
-录制文件为 `yys/mouse_clicks.json`，新版格式为
-`[{"x": .., "y": .., "t": 相对第一次点击的秒数}]`；回放兼容旧版
-`time_interval` 格式。
-
 ## 停止脚本
 
 鼠标快速甩到屏幕左上角可触发 pyautogui 的 FailSafe 停止循环；
-录制/回放可直接 Ctrl+C。
+采点脚本按 Esc 放弃当前区域、Ctrl+C 直接退出。

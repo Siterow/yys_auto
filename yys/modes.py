@@ -45,10 +45,10 @@ MODES: dict[str, BattleMode] = {
     "huodong": BattleMode(
         name="huodong",
         display_name="活动",
-        menu=Region(1073, 223, 1659, 272),
-        start=Region(1656, 895, 1714, 953),
-        end_delay_range=(7, 9),
-        extra_menu_click_delays=(1.0, 1.0,1.0),
-        default_circle_time=1,
+        menu=Region(1227, 266, 1641, 342),
+        start=Region(1660, 903, 1708, 953),
+        end_delay_range=(4, 6),
+        extra_menu_click_delays=(1.0, 1.0),
+        default_circle_time=800,
     ),
 }
